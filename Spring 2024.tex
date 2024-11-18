@@ -1,0 +1,255 @@
+%-------------------------
+% Resume in Latex1
+% Author : Gennadii Chursov
+% Based off of: https://github.com/sb2nov/resume and https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\huge \scshape Sebastian Parsons-Hall} \\ \vspace{1pt}
+    % \small \textit{Engineering Physicist} \\
+    902-306-1815 $|$ \href{18swph@queensu.ca}{\underline{18swph@queensu.ca}} % $|$ 
+    % \href{https://www.linkedin.com/in/namesurname/}{\underline{linkedin.com/in/namesurname/}} $|$
+    % \href{https://github.com/namesurname}{\underline{github.com/namesurname}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section*{Profile}
+Newly graduated engineering physicist looking for research and data analysis opportunities. Experience in academia and industry. Motivated, cooperative, and solution-oriented. Experience in using cutting-edge computational techniques for data analysis and computational physics, and applying those models to varied problems.
+
+\vspace{-0.3cm}
+\section{Academic Background}
+
+\resumeSubHeadingListStart
+\resumeSubheading {B.A.S.c. Engineering Physics (Mech.)}{Sept. 2019 -- April 2024}
+    {Queen's University}
+    {Kingston, ON}
+
+
+\vspace{0.5cm}
+\resumeSubheading {International Baccalaureate Diploma}{2016-2019}
+    {King's-Edgehill School}
+    {Windsor, NS}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Undergraduate Dark Matter Research Fellow}{May 2024 -- August 2024}
+      {PICO Collaboration at SNOLAB}{Kingston, ON}
+      \resumeItemListStart
+      \resumeItem{Developing machine learning algorithms for determining anomalous signal sources in the PICO dark matter detector.}
+      \resumeItem{Refining source-localization of particle interactions with array processing and artificial neural networks.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Aerospace and Defence Corporate Intern (Paid)}{May 2022 --August 2023}
+      {Celestica Inc.}{Toronto, ON}
+      \resumeItemListStart
+
+
+\resumeItem{Working with sensitive CGP/ITAR aerospace/military projects, demanding care and discretion on a legal and moral basis. Keeping confidential information contained to Celestica or the customer.}
+\resumeItem{Preparing and processing financial data from global sites across the company, presenting quantitative and qualitative results to higher-ups at company headquarters.}
+
+% \resumeItem{Significant attention to detail and motivation necessary to deep-dive into complicated systems to discover potential vulnerabilities}
+\resumeItem{Responsible for communicating and answering questions effectively in high-stakes meetings with internal and external global teams.}
+% \resumeItem{Responsible for taking questions for specific details on-the-fly in a professional setting}
+
+% \resumeItem{Responsible for training and introducing new interns to several complex and detail-oriented systems. Responsible for working with interns over a longer period (4 months) to understand their responsibilities and how to be effective and independent}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+% \section{Projects}
+%    \resumeSubHeadingListStart
+%      \resumeProjectHeading
+%          {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+%          \resumeItemListStart
+%            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+%            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+%            \resumeItem{Visualized GitHub data to show collaboration}
+%            \resumeItem{Used Celery and Redis for asynchronous tasks}
+%          \resumeItemListEnd
+%      \resumeProjectHeading
+%          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+%          \resumeItemListStart
+%            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+%            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+%            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+%            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+%          \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Research \& Scholastic Achievement}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Queen's University \& SNOLAB}{}{}{}
+      \vspace{-0.6cm}
+    \resumeItemListStart
+      \resumeItem{Undergraduate thesis on particle interaction localization with electromagnetic detection modes in the Scintillating Bubble Chamber dark matter detector.}
+      \resumeItem{Experience in high-performance computational physics, Numba \& parallelization for physics simulation and data processing.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Kings-Edgehill School}{}{}{}
+      \vspace{-0.6cm}
+    \resumeItemListStart
+      \resumeItem{Led the Youth in Action Committee, building 2 school houses over 23-day expedition to rural Tanzania and summiting Mount Kilimanjaro.}
+      \resumeItem{Represented the school at a national level in debate, competing at the prestigious Harthouse Tournament.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+\section{Research Interests}
+\vspace{-0.4cm}
+\begin{multicols}{2}
+\resumeItemListStart
+    \resumeItem{Computational Physics \& Applications}
+    \resumeItem{Simulating Complex Systems}
+    \resumeItem{Cutting-Edge Data Analysis Techniques}
+    % \resumeItem{}
+    % \resumeItem{Experimental Dark Matter \& Neutrino Physics}
+    \resumeItem{Applied Quantum Physics}
+    % \resumeItem{Brain-Computer Interfaces (BCIs)}
+    % \resumeItem{Beyond the Standard Model}
+    % \resumeItem{Complexity}
+    % \resumeItem{Higher Spacetime Dimensions}
+    % \resumeItem{AGI}
+\resumeItemListEnd
+\end{multicols}
+
+
+
+\section{Skills \& Certifications}
+\vspace{-0.4cm}
+\begin{multicols}{2}
+\resumeItemListStart
+    \resumeItem{GCP \& ITAR Military Security Clearance}
+    \resumeItem{Using high performance computers (HPCs) and advanced computational techniques in physics}
+    \resumeItem{Certified PADI Scuba Diver}
+    % \resumeItem{Pursuing Private Pilot's License (PPL)}
+    \resumeItem{Experience as a public speaker, debate competitor at a national level}
+    % \resumeItem{Non-technical Mountain Climbing}
+
+    % \resumeItem{}
+\resumeItemListEnd
+\end{multicols}
+
+
+
+
+
+
+\end{document}
